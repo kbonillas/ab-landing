@@ -1,3 +1,4 @@
+/* For devices at 375px */
 *{
     margin: 0;
     padding: 0;
@@ -10,37 +11,38 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 275px 130px 160px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-    /* border: 1px solid red; */
+    grid-template-rows: 275px 130px 160px 80px 
+    80px 35px 75px 230px;
 }
 
 header{
     grid-column: 1 / span 12;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     background-image: url(assets/header-gray.svg);
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 275px 130px 160px 80px;
 }
 
 .hbd{
     grid-column: 1 / span 12;
     grid-row: 1 / span 1;
     width: 45%;
-    margin: 5em 0 0 0;
+    margin: 5em auto 0;
 
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .free-trial{
     grid-column: 1 / span 12;
     grid-row: 2 / span 3;
-
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
@@ -48,7 +50,7 @@ h1{
     font-size: 21pt;
     line-height: 30px;
     text-align: center;
-    /* margin: 5em 0 0 0; */
+    margin: 2em 0 0 0;
 }
 
 h1 span{
@@ -56,10 +58,19 @@ h1 span{
     font-weight: 800;
 }
 
-/* h2{
-    grid-column: 2 / span 10;
-    grid-row: 3 / span 1;
+.seven-day{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.free-trial-bean{
+    width: 55px;
+    margin: 30px 2px 0 2px;
+}
+
+h2{
     font-family: hwt-artz, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -68,7 +79,7 @@ h1 span{
     line-height: 45px;
     text-align: center;
     color: #f2cb05;
-    margin: 2em 0 0 0;
+    margin: 1.2em 0 0 0;
 }
 
 h2 span{
@@ -77,4 +88,40 @@ h2 span{
     font-size: 80pt;
     font-weight: 800;
     color: #f2cb05;
-} */
+}
+
+.cta{
+    background-color: #3068d9;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18pt;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 70px;
+    padding: .4em 2.3em;
+    margin: 1em 0;
+}
+
+.satisfaction{
+    grid-column: 1 / span 12;
+    grid-row: 6 / span 3;
+}
+
+h3{
+    grid-column: 1 / span 12;
+    grid-row: 6 / span 1;
+    font-family: hwt-artz, sans-serif;
+    font-weight: 700;
+    font-size: 22pt;
+    text-align: center;
+}
+
+.guarantee{
+    grid-column: 2 / span 10;
+    grid-row: 7 / span 1;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 26pt;
+    padding: 10px 0 0 0;
+}
