@@ -7,6 +7,7 @@
     <title>Happy Beans Design</title>
     <link rel="stylesheet" href="https://use.typekit.net/xkt2vwy.css">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="jquery.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -52,27 +53,49 @@
             <div class="plans-module">
                 <object class="plan-heading" data="assets/plan-heading.svg" type="image/svg+xml"></object>
                 <div class="headings">
-                    <h5 class="selected-plan" onclick="showPricing('enterprise')">Enterprise</h5>
-                    <h5 onclick="showPricing('pro')">Pro</h5>
-                    <h5 onclick="showPricing('basic')">Basic</h5>
+                    <h5 id="enterprise" onclick="showPricing('enterprise')">Enterprise</h5>
+                    <h5 id="pro" class="selected-plan" onclick="showPricing('pro')">Pro</h5>
+                    <h5 id="basic" onclick="showPricing('basic')">Basic</h5>
                 </div>
                 <ul>
-                    <li class="basic">Social Media Graphics</li>
-                    <li class="basic">Blog Post Graphics</li>
-                    <li class="basic">Digital Advertisement Assets</li>
-                    <li class="pro">Branding</li>
-                    <li class="pro">Logos</li>
-                    <li class="pro">Print Materials</li>
-                    <li class="pro">Event Flyers</li>
-                    <li class="pro">Stickers</li>
-                    <li class="enterprise">Advanced Web Design</li>
-                    <li class="enterprise">Advanced Presentations</li>
+                    <li class="planOption basic selected">Social Media Graphics</li>
+                    <li class="planOption basic selected">Blog Post Graphics</li>
+                    <li class="planOption basic selected">Digital Advertisement Assets</li>
+                    <li class="planOption pro selected">Branding</li>
+                    <li class="planOption pro selected">Logos</li>
+                    <li class="planOption pro selected">Print Materials</li>
+                    <li class="planOption pro selected">Event Flyers</li>
+                    <li class="planOption pro selected">Stickers</li>
+                    <li class="planOption enterprise">Advanced Web Design</li>
+                    <li class="planOption enterprise">Advanced Presentations</li>
                 </ul>
-                <p id="pricing">Call for Pricing</p>
+                <p id="pricing">$1500 / Month</p>
                 <object class="plan-footer" data="assets/plan-footer.svg" type="image/svg+xml"></object>
             </div>
         </section>
 
+        <section class="process">
+            <div class="process-bg">
+                <img src="assets/process-bg.svg" alt="process-gray">
+            </div>
+            <h3>Our Simple Process</h3>
+            <object class="wizard-bean" data="assets/wizard-bean.svg" type="image/svg+xml"></object>
+            <div class="process-steps">
+                <object class="step" data="assets/submission.svg" type="image/svg+xml"></object>
+                <p>You submit your design need to us and our team then goes to work.</p>
+                <object class="step" data="assets/revisions.svg" type="image/svg+xml"></object>
+                <p>You receive your first draft and can request unlimited revisions.</p>
+                <object class="step" data="assets/approval.svg" type="image/svg+xml"></object>
+                <p>Once you're a happy bean we'll send over the final files!</p>
+            </div>
+            <a href="#" class="cta">Try 7 Days Free</a>
+        </section>
+
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+        </section>
+
     </div>
 </body>
+<script src="script.js"></script>
 </html>
