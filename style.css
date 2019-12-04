@@ -525,3 +525,34 @@ footer{
     background-image: url(assets/footer.svg);
     background-repeat: no-repeat;
 }
+
+
+
+/* ******************************* */
+/* ******************************* */
+/* For devices at 1900-1920px */
+@media only screen and (min-width: 1900px){
+    .grid-container{
+        grid-template-rows: 740px;
+    }
+    header{
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        background-image: url(assets/header-gray-desktop.svg);
+        background-repeat: no-repeat;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 205px 205px 192px 148px;
+    }
+    .hbd{
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        width: 45%;
+        margin: 5em auto 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
