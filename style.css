@@ -16,7 +16,9 @@
     930px
     800px
     1300px
-    1000px;
+    1000px
+    450px
+    220px;
 }
 
 header{
@@ -347,7 +349,6 @@ h5{
 .process{
     grid-column: 1 / span 12;
     grid-row: 11 / span 1;
-    border: 1px solid green;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -404,7 +405,7 @@ h5{
 }
 
 .faq{
-    grid-column: 1 / span 12;
+    grid-column: 3 / span 8;
     grid-row: 12 / span 1;
 
     display: flex;
@@ -412,25 +413,115 @@ h5{
 }
 
 .faq h3{
-    grid-column: 1 / span 12;
+    grid-column: 2 / span 10;
     grid-row: 1 / span 1;
-    align-self: center; 
+    align-self: center;
+
+    margin: 0 0 1em 0;
 }
 
 .faq h3::before{
     content: '';
-    background: url(assets/green-bean-left.svg);
+    background: url(assets/yellow-bean-left.svg);
     width: 25px;
     height: 38px;
     position: absolute;
-    left: 1.5em;
+    left: 1.8em;
 }
 
 .faq h3::after{
     content: '';
-    background: url(assets/green-bean-right.svg);
+    background: url(assets/yellow-bean-right.svg);
     width: 25px;
     height: 38px;
     position: absolute;
-    right: 1.5em;
+    /* top: 0em; */
+    right: 1.8em;
+}
+
+.faq h6{
+    font-weight: 700;
+    font-size: 19pt;
+    line-height: 24pt;
+}
+
+.faq p{
+    font-weight: 400;
+    font-size: 12pt;
+    line-height: 24pt;
+    padding: 10px 25px 20px 0;
+}
+
+/* .faq p:nth-child(0n+1)::after{
+    content: '';
+    background: url(assets/faq-yellow-bean.svg);
+    width: 55px;
+    height: 63px;
+    position: absolute;
+    right: 1.3em;
+} */
+
+.faq-yellow-bean{
+    width: 55px;
+}
+
+.claim{
+    grid-column: 2 / span 10;
+    grid-row: 13 / span 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.claim h3{
+    grid-column: 2 / span 10;
+    grid-row: 1 / span 1;
+    align-self: center;
+
+    margin: 0 0 1em 0;
+}
+
+.claim h3::before{
+    content: '';
+    background: url(assets/purple-bean-left.svg);
+    width: 25px;
+    height: 38px;
+    position: absolute;
+    left: 1.2em;
+}
+
+.claim h3::after{
+    content: '';
+    background: url(assets/purple-bean-right.svg);
+    width: 25px;
+    height: 38px;
+    position: absolute;
+    right: 1.2em;
+}
+
+.images{
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 220px;
+    align-self: center;
+}
+
+.example1{
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    width: 100%;
+}
+
+.example2{
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 1;
+    width: 100%;
+}
+
+footer{
+    grid-column: 1 / span 12;
+    grid-row: 14 / span 1;
+    background-image: url(assets/footer.svg);
+    background-repeat: no-repeat;
 }
