@@ -26,6 +26,8 @@ header{
     grid-row: 1 / span 4;
     background-image: url(assets/header-gray.svg);
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -296,6 +298,7 @@ h5{
     font-size: 18pt;
     color: #4d4d4d;
     padding: .5em .8em;
+    cursor: pointer;
 }
 
 .selected-plan{
@@ -332,8 +335,9 @@ h5{
     font-style: normal;
     font-size: 20pt;
     text-align: center;
+    text-decoration: none;
     padding: .5em 1em;
-    background: #4d4d4d;
+    background: #3068d9;
     color: #fff;
     border-radius: 70px;
 }
@@ -551,6 +555,8 @@ footer{
         grid-row: 1 / span 1;
         background-image: url(assets/header-gray-desktop.svg);
         background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1043,6 +1049,8 @@ footer{
 
     header{
         grid-template-rows: 75px 100px 100px 125px;
+        height: 100%;
+        width: 100%;
     }
 
     .hbd{
@@ -1484,11 +1492,13 @@ footer{
 /* For devices at 1300px */
 @media only screen and (min-width: 1300px){
     .grid-container{
-        grid-template-rows: 550px 530px 605px 955px 1000px 600px 800px 376px;
+        grid-template-rows: 550px 530px 605px 955px 1000px 445px 600px 376px;
     }
 
     header{
         grid-template-rows: 100px 100px 250px 100px;
+        height: 100%;
+        width: 100%;
     }
 
     .hbd{
@@ -1775,7 +1785,7 @@ footer{
         grid-column: 2 / span 10;
         grid-row: 6 / span 1;
 
-        grid-template-rows: 150px 60px 40px 50px 100px 50px 100px;
+        grid-template-rows: 45px 60px 40px 50px 100px 50px 100px;
     }
     
     .faq h3{
@@ -1847,7 +1857,7 @@ footer{
         grid-column: 1 / span 5;
         grid-row: 7 / span 1;
         text-align: right;
-        max-width: 280px;
+        max-width: 350px;
         justify-self: end;
         padding: 0;
     }
@@ -1862,22 +1872,16 @@ footer{
         grid-column: 8 / span 5;
         grid-row: 7 / span 1;
         text-align: left;
-        max-width: 300px;
+        max-width: 350px;
         justify-self: start;
         padding: 0;
     }
-
-    
-
-
-
-
 
     .claim{
         grid-column: 2 / span 10;
         grid-row: 7 / span 1;
 
-        grid-template-rows: 70px 60px 40px 230px 300px;
+        grid-template-rows: 70px 60px 40px 230px 200px;
     }
     
     .claim h3{
@@ -1972,6 +1976,8 @@ footer{
 
     header{
         grid-template-rows: 205px 205px 192px 148px;
+        height: 100%;
+        width: 100%;
     }
 
     .hbd{
