@@ -507,6 +507,14 @@ h5{
     align-self: center;
 }
 
+.claim-beans{
+    display: none;
+}
+
+.claim-desc{
+    display: none;
+}
+
 .example1{
     grid-column: 1 / span 6;
     grid-row: 1 / span 1;
@@ -533,7 +541,7 @@ footer{
 /* For devices at 1900-1920px */
 @media only screen and (min-width: 1900px){
     .grid-container{
-        grid-template-rows: 740px;
+        grid-template-rows: 750px 570px 720px 1395px 1230px 810px 800px 500px;
     }
 
     header{
@@ -544,11 +552,7 @@ footer{
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 205px 205px 192px 148px
-        570px
-        720px
-        1130px
-        1060px;
+        grid-template-rows: 205px 205px 192px 148px;
     }
 
     .hbd{
@@ -612,7 +616,7 @@ footer{
 
     .satisfaction{
         grid-column: 4 / span 6;
-        grid-row: 5 / span 1;
+        grid-row: 2 / span 1;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -639,7 +643,7 @@ footer{
 
     .customers{
         grid-column: 2 / span 10;
-        grid-row: 6 / span 1;
+        grid-row: 3 / span 1;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -652,20 +656,14 @@ footer{
     }
     
     .customers h3::before{
-        content: '';
-        background: url(assets/orange-bean-left.svg);
         width: 57px;
         height: 87px;
-        position: absolute;
         left: 10.3em;
     }
     
     .customers h3::after{
-        content: '';
-        background: url(assets/orange-bean-right.svg);
         width: 57px;
         height: 87px;
-        position: absolute;
         right: 10.3em;
     }
     
@@ -716,16 +714,10 @@ footer{
         text-align: left;
     }
 
-
-
-
-
-
-
     .plans{
         grid-column: 2 / span 10;
-        grid-row: 7 / span 1;
-        margin: 20px 0 0 0;
+        grid-row: 4 / span 1;
+        margin: 0;
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -739,20 +731,14 @@ footer{
     }
     
     .plans h3::before{
-        content: '';
-        background: url(assets/green-bean-left.svg);
         width: 57px;
         height: 87px;
-        position: absolute;
         left: 9.4em;
     }
     
     .plans h3::after{
-        content: '';
-        background: url(assets/green-bean-right.svg);
         width: 57px;
         height: 87px;
-        position: absolute;
         right: 9.4em;
     }
     
@@ -788,8 +774,6 @@ footer{
         grid-column: 2 / span 10;
         grid-row: 2 / span 1;
         
-        list-style-type: none;
-        text-align: center;
         font-size: 18pt;
         line-height: 36pt;
     }
@@ -799,22 +783,260 @@ footer{
         grid-row: 3 / span 1;
         align-self: center;
     
-        font-family: hwt-artz, sans-serif;
-        font-weight: 700;
-        font-style: normal;
         font-size: 24pt;
-        text-align: center;
         padding: .5em 1em;
-        background: #4d4d4d;
-        color: #fff;
-        border-radius: 70px;
     }
     
     .plan-footer{
         height: 100px;
         grid-column: 3 / span 8;
         grid-row: 4 / span 1;
-        justify-self: center;
-        /* align-self: end; */
+    }
+
+    .process{
+        grid-column: 1 / span 12;
+        grid-row: 5 / span 1;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 50px 200px 200px;
+    }
+    
+    .process-bg{
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 2;
+
+        align-self: start;
+        margin: 0;
+    }
+    
+    .process h3{
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 1;
+        position: relative;
+        align-self: end;
+        bottom: 0em;
+    }
+    
+    .wizard-bean{
+        grid-column: 2 / span 3;
+        grid-row: 4 / span 3;
+        align-self: end;
+        position: relative;
+        top: 0em;
+    }
+    
+    .process-steps{
+        grid-column: 6 / span 4;
+        grid-row: 4 / span 3;
+    
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .process-steps p{
+        text-align: left;
+        line-height: 30pt;
+        font-size: 18pt;
+        max-width: 260px;
+        padding: 20px 40px 20px 50px;
+    }
+    
+    .step{
+        height: 180px;
+    }
+    
+    .process a{
+        grid-column: 6 / span 4;
+        grid-row: 7 / span 1;
+        align-self: center;
+    }
+
+    .faq{
+        grid-column: 2 / span 10;
+        grid-row: 6 / span 1;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 100px 50px 50px 130px 50px 130px;
+    }
+    
+    .faq h3{
+        grid-column: 2 / span 10;
+        grid-row: 2 / span 1;
+        align-self: center;
+        text-align: center;
+    
+        margin: 0;
+    }
+    
+    .faq h3::before{
+        width: 57px;
+        height: 87px;
+        left: 7.7em;
+    }
+    
+    .faq h3::after{
+        width: 57px;
+        height: 87px;
+        right: 7.7em;
+    }
+    
+    .faq h6{
+        font-size: 24pt;
+        line-height: 24pt;
+    }
+    
+    .faq p{
+        font-weight: 400;
+        font-size: 14pt;
+        line-height: 24pt;
+        max-width: 300px;
+    }
+    
+    .faq .q1{
+        grid-column: 2 / span 4;
+        grid-row: 4 / span 1;
+        text-align: right;
+    }
+
+    .faq .a1{
+        grid-column: 2 / span 4;
+        grid-row: 5 / span 1;
+        text-align: right;
+        max-width: 380px;
+        justify-self: end;
+        padding: 0;
+    }
+
+    .faq .q2{
+        grid-column: 8 / span 4;
+        grid-row: 4 / span 1;
+        text-align: left;
+    }
+
+    .faq .a2{
+        grid-column: 8 / span 4;
+        grid-row: 5 / span 1;
+        text-align: left;
+        max-width: 400px;
+        justify-self: start;
+        padding: 0;
+    }
+
+    .faq .q3{
+        grid-column: 2 / span 4;
+        grid-row: 6 / span 1;
+        text-align: right;
+    }
+
+    .faq .a3{
+        grid-column: 2 / span 4;
+        grid-row: 7 / span 1;
+        text-align: right;
+        max-width: 330px;
+        justify-self: end;
+        padding: 0;
+    }
+
+    .faq .q4{
+        grid-column: 8 / span 4;
+        grid-row: 6 / span 1;
+        text-align: left;
+    }
+
+    .faq .a4{
+        grid-column: 8 / span 4;
+        grid-row: 7 / span 1;
+        text-align: left;
+        max-width: 400px;
+        justify-self: start;
+        padding: 0;
+    }
+
+    .claim{
+        grid-column: 2 / span 10;
+        grid-row: 7 / span 1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 100px 400px 100px;
+    }
+    
+    .claim h3{
+        grid-column: 2 / span 10;
+        grid-row: 2 / span 1;
+        align-self: center;
+    
+        margin: 0 0 1em 0;
+    }
+    
+    .claim h3::before{
+        width: 57px;
+        height: 87px;
+        left: 9em;
+    }
+    
+    .claim h3::after{
+        width: 57px;
+        height: 87px;
+        right: 9em;
+    }
+
+    .claim .cta{
+        grid-column: 5 / span 4;
+        grid-row: 4 / span 1;
+        align-self: center;
+    }
+
+    .images{
+        grid-column: 1 / span 12;
+        grid-row: 3 / span 1;
+
+        margin: 50px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px;
+        align-self: center;
+    }
+
+    .claim-beans{
+        display: block;
+
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 1;
+    }
+
+    .claim-desc{
+        display: block;
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 1;
+
+        text-align: center;
+        font-weight: 400;
+        font-size: 22pt;
+        line-height: 35pt;
+        align-self: center;
+    }
+
+    .example1{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        width: 100%;
+    }
+    
+    .example2{
+        grid-column: 10 / span 3;
+        grid-row: 1 / span 1;
+        width: 100%;
+    }
+
+    footer{
+        grid-column: 1 / span 12;
+        grid-row: 8 / span 1;
+        background-image: url(assets/footer-desktop.svg);
+        background-repeat: no-repeat;
     }
 }
