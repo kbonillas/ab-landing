@@ -1484,7 +1484,7 @@ footer{
 /* For devices at 1300px */
 @media only screen and (min-width: 1300px){
     .grid-container{
-        grid-template-rows: 550px 530px 755px 1195px 1000px 600px 800px 376px;
+        grid-template-rows: 550px 530px 605px 955px 1000px 600px 800px 376px;
     }
 
     header{
@@ -1567,7 +1567,7 @@ footer{
     
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 155px 100px 500px;
+        grid-template-rows: 155px 50px 400px;
     }
     
     .customers h3{
@@ -1588,7 +1588,7 @@ footer{
     }
     
     .customer{
-        grid-column: 3 / span 4;
+        grid-column: 2 / span 5;
         grid-row: 3 / span 1;
     
         display: flex;
@@ -1600,8 +1600,8 @@ footer{
     }
 
     .customer1{
-        grid-column: 1 / span 3;
-        width: 263px;
+        grid-column: 1 / span 2;
+        width: 150px;
     }
     
     .customer2{
@@ -1617,19 +1617,19 @@ footer{
     }
     
     .customer-company{
-        font-size: 30pt;
+        font-size: 16pt;
         text-align: center;
         width: 200px;
     }
     
     .customer-description{
-        font-size: 14pt;
-        line-height: 30pt;
+        font-size: 10pt;
+        line-height: 24pt;
         text-align: center;
     }
     
     .customer-name{
-        font-size: 13pt;
+        font-size: 9pt;
         padding: 20px 0 0 0;
         text-align: left;
     }
@@ -1638,7 +1638,7 @@ footer{
         grid-column: 2 / span 10;
         grid-row: 4 / span 1;
         margin: 0;
-        grid-template-rows: 155px 100px 940px;
+        grid-template-rows: 155px 100px 700px;
     }
     
     .plans h3{
@@ -1659,50 +1659,52 @@ footer{
     }
     
     .plans-module{
-        grid-column: 3 / span 8;
+        grid-column: 4 / span 6;
         grid-row: 3 / span 1;
     
-        grid-template-rows: 200px 480px 80px 180px;
+        grid-template-rows: 130px 420px 50px 100px;
     }
     
     .plan-heading{
         margin: 25px 0 0 0;
-        height: 150px;
+        height: 100px;
         grid-column: 2 / span 10;
         grid-row: 1 / span 1;
         justify-self: center;
     }
     
     .headings{
-        grid-column: 3 / span 8;
+        grid-column: 4 / span 6;
         grid-row: 1 / span 1;
 
         justify-content: space-evenly;
+        align-items: center;
+        margin: 30px 0 0 0;
     }
     
     h5{
-        font-size: 22pt;
+        font-size: 16pt;
     }
     
     .plans-module ul{
         grid-column: 2 / span 10;
         grid-row: 2 / span 1;
         
-        font-size: 16pt;
-        line-height: 35pt;
+        font-size: 12pt;
+        line-height: 30pt;
     }
     
     #pricing{
-        grid-column: 4 / span 6;
+        grid-column: 5 / span 4;
         grid-row: 3 / span 1;
         align-self: center;
     
-        font-size: 24pt;
+        font-size: 18pt;
         padding: .5em 1em;
     }
     
     .plan-footer{
-        height: 100px;
+        height: 60px;
         grid-column: 3 / span 8;
         grid-row: 4 / span 1;
         align-self: center;
