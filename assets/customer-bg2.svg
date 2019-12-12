@@ -4,12 +4,23 @@
 	 viewBox="0 0 181.8 190.7" style="enable-background:new 0 0 181.8 190.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F2F2F2;}
-	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <title>customer-bg2</title>
 <g id="Group_500">
 	<path id="Path_751" class="st0" d="M24.1,10.6C10.6,20-5.1,46,1.6,66.5C9.7,90.8,22.2,97.4,25.1,105c7.3,18.5-5.2,45.2,13.4,68.1
-		s64,24.6,100-1.6s53-61.9,37.4-84.8s-70.9-18.2-82.9-31c-9.5-10.2-8-29.6-20.4-46.7S35,2.9,24.1,10.6z"/>
+		s64,24.6,100-1.6s53-61.9,37.4-84.8S105,68.5,93,55.7C83.5,45.5,85,26.1,72.6,9S35,2.9,24.1,10.6z"/>
 </g>
-<circle class="st1" cx="90.9" cy="69.3" r="46.2"/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="90.9" cy="69.3" r="46.2"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_2_);">
+		
+			<image style="overflow:visible;" width="400" height="376" xlink:href="wp-customer.jpg"  transform="matrix(0.2624 0 0 0.2624 37.3492 21.3201)">
+		</image>
+	</g>
+</g>
 </svg>

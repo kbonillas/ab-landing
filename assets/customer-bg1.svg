@@ -4,7 +4,6 @@
 	 viewBox="0 0 173.1 157.4" style="enable-background:new 0 0 173.1 157.4;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F2F2F2;}
-	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <title>customer-bg1</title>
 <g id="Group_499">
@@ -22,5 +21,17 @@
 		</g>
 	</g>
 </g>
-<circle class="st1" cx="86.6" cy="54.9" r="46.2"/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="86.6" cy="54.9" r="46.2"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_2_);">
+		
+			<image style="overflow:visible;" width="1055" height="910" xlink:href="testqase-customer.jpg"  transform="matrix(0.1296 0 0 0.1296 15.2468 3.0224)">
+		</image>
+	</g>
+</g>
 </svg>
